@@ -1,0 +1,10 @@
+def freq(a):
+    dict={}
+    for num in a:
+        if num in dict:
+            dict[num]+=1
+        else:
+            dict[num]=1
+    print(dict)
+li=[1,2,3,4,1,2,3,4,5,6,2,3]
+freq(li)

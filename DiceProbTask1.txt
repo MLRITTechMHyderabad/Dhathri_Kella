@@ -1,0 +1,36 @@
+import random
+numbers = [1, 2, 3, 4, 5, 6]
+sample_numbers1= random.sample(numbers, 2)
+sample_numbers2= random.sample(numbers, 2)
+print(sample_numbers1)
+print(sample_numbers2)
+l1=[1,2,3,4,5,6]
+l2=[1,2,3,4,5,6]
+l3=[]
+dict={}
+for i in l1:
+    for j in l2:
+        l3.append((i,j))
+for i in range(2,13):
+    c=0
+    for j in l3:
+        if i==j[0]+j[1]:
+            c+=1
+    dict[str(i)]=c/len(l3)
+print(dict)
+sum1=0
+sum2=0
+for i in sample_numbers1:
+    sum1+=i
+for i in sample_numbers2:
+    sum2+=i
+print(sum1)
+print(sum2)
+d1=dict.get(str(sum1))
+d2=dict.get(str(sum2))
+print(d1)
+print(d2)
+if(d1>d2):
+    print("d1 wins")
+else:
+    print("d2 wins")
