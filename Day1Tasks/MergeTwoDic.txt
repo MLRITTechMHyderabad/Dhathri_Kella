@@ -1,0 +1,12 @@
+
+def merge(a,b):
+    for i in b.keys():
+       if i in a:
+           a[i]=[a[i],b[i]]
+       else:
+            a[i]=b[i]
+    return a            
+
+a={"name":"Dhathri","age":21,"tech":"python"}
+b={"name":"swetha","id":25,"tech":"java"}
+print(merge(a,b))

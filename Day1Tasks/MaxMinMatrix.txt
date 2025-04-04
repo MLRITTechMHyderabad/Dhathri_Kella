@@ -1,0 +1,11 @@
+li=[[10,28,3],[8,5,6],[7,8,9]]
+max_Ele=li[0][0]
+min_Ele=li[0][0]
+for i in li:
+    for j in i:
+        if j>max_Ele:
+            max_Ele=j
+        if j<min_Ele:
+            min_Ele=j
+print(max_Ele)
+print(min_Ele)
